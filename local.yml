@@ -8,6 +8,7 @@
 
   tasks:
     - name: Ensure Ansible downloads directory exists.
+      debug: msg="Ensure Ansible downloads directory exists."
       file:
         path: "{{ downloads }}"
         state: directory
@@ -16,11 +17,13 @@
     - include: tasks/preferences.yml
 
     - name: Get list of apps installed with cask.
+      debug: msg="Get list of apps installed with cask."
       command: brew cask list
       register: homebrew_cask_list
       changed_when: false
 
     - name: Install apps via `brew cask`.
+      debug: msg="Install apps via `brew cask`."
       command: >
         brew cask install {{ item }} --appdir={{ homebrew_cask_appdir }}
       with_items: homebrew_cask_apps
