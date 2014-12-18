@@ -1,0 +1,7 @@
+---
+- hosts: workstation
+  connection: local
+
+  tasks:
+    - name: print shit
+      debug: msg="SHIT!"
