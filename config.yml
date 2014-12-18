@@ -12,6 +12,6 @@ sources:
 
   git:
     - name: 'osx'
-      repo: 'https://github.com/nexilesroot/playbooks.git'
+      repo: 'https://github.com/nexilesroot/battleschool.git'
       playbooks:
-         - homebrew.yml
+         - main.yml
