@@ -1,17 +1,16 @@
 ---
 sources:
   # Any ansible playbooks located in ~/battleschool/playbooks can be listed under local. Each playbook will be executed in order.
-  local:
-    #- playbook.yml
-    #
+  # local:
+  #   - playbook.yml
 
   # Playbooks located at a url. Each playbook will be executed in order.
-  url:
-    #- name: playbook.yml
-    #  url: https://db.tt/VcyI9dvr
+  # url:
+  #   - name: playbook.yml
+  #    url: https://db.tt/VcyI9dvr
 
   git:
     - name: 'osx'
-      repo: 'https://github.com/nexilesroot/battleschool.git'
+      repo: 'https://github.com/nexilesroot/battleschool'
       playbooks:
          - main.yml
