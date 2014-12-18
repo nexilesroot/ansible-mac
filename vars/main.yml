@@ -1,0 +1,47 @@
+---
+downloads: ~/.ansible-downloads/
+
+homebrew_installed_packages:
+  - zsh
+  - python
+  - jython
+  - coreutils
+  - lynx
+  - node
+  - git
+  - git-flow
+  - ghi
+  - legit
+  - vim
+  - smartmontools
+  - youtube-dl
+  - caskroom/cask/brew-cask
+
+homebrew_taps:
+  - caskroom/cask
+  - homebrew/versions
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - google-chrome
+  - firefox
+  - microsoft-lync-plugin
+  - dropbox
+  - atom
+  - sublime-text
+  - littleipsum
+  - skitch
+  - evernote
+  - alfred
+  - teamviewer
+  - controlplane
+  - dash
+  - telephone
+  - skype
+  - shiftit
+  - remote-desktop-connection
+  - gitx
+  - mumble
+  - virtualbox
+  - xquartz
+  - vlc
